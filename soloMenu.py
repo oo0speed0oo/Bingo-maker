@@ -14,25 +14,25 @@ class SoloGameMenuScreen(Screen):
 
         # Grid Size Selection
         layout.add_widget(Label(text="Select Grid Size:", font_size=20))
-        size_buttons = BoxLayout(spacing=10)
-        btn_3x3 = Button(text="3x3")
-        btn_4x4 = Button(text="4x4")
-        btn_3x3.bind(on_press=lambda x: self.set_grid_size(3))
-        btn_4x4.bind(on_press=lambda x: self.set_grid_size(4))
-        size_buttons.add_widget(btn_3x3)
-        size_buttons.add_widget(btn_4x4)
-        layout.add_widget(size_buttons)
+        self.size_buttons = BoxLayout(spacing=10)
+        self.btn_3x3 = Button(text="3x3")
+        self.btn_4x4 = Button(text="4x4")
+        self.btn_3x3.bind(on_press=lambda x: self.set_grid_size(3))
+        self.btn_4x4.bind(on_press=lambda x: self.set_grid_size(4))
+        self.size_buttons.add_widget(self.btn_3x3)
+        self.size_buttons.add_widget(self.btn_4x4)
+        layout.add_widget(self.size_buttons)
 
         # Image Source Selection
         layout.add_widget(Label(text="Choose Image Source:", font_size=20))
-        source_buttons = BoxLayout(spacing=10)
-        internal_btn = Button(text="Internal Storage")
-        preloaded_btn = Button(text="Preloaded Grid")
-        internal_btn.bind(on_press=lambda x: self.set_source("internal"))
-        preloaded_btn.bind(on_press=lambda x: self.set_source("preloaded"))
-        source_buttons.add_widget(internal_btn)
-        source_buttons.add_widget(preloaded_btn)
-        layout.add_widget(source_buttons)
+        self.source_buttons = BoxLayout(spacing=10)
+        self.internal_btn = Button(text="Internal Storage")
+        self.preloaded_btn = Button(text="Preloaded Grid")
+        self.internal_btn.bind(on_press=lambda x: self.set_source("internal"))
+        self.preloaded_btn.bind(on_press=lambda x: self.set_source("preloaded"))
+        self.source_buttons.add_widget(self.internal_btn)
+        self.source_buttons.add_widget(self.preloaded_btn)
+        layout.add_widget(self.source_buttons)
 
         # Navigation Buttons
         nav_buttons = BoxLayout(spacing=10, size_hint=(1, 0.2))
@@ -46,13 +46,34 @@ class SoloGameMenuScreen(Screen):
 
         self.add_widget(layout)
 
+        # Initialize button colors to reflect default selections
+        self.update_grid_button_colors()
+        self.update_source_button_colors()
+
     def set_grid_size(self, size):
         self.selected_grid_size = size
+        self.update_grid_button_colors()
         print(f"Grid size selected: {size}x{size}")
 
     def set_source(self, source_type):
         self.selected_source = source_type
+        self.update_source_button_colors()
         print(f"Image source selected: {source_type}")
+
+    def update_grid_button_colors(self):
+        # Reset both buttons to default color
+        default_color = (1, 1, 1, 1)  # white
+        selected_color = (0.2, 0.6, 0.9, 1)  # light blue
+
+        self.btn_3x3.background_color = selected_color if self.selected_grid_size == 3 else default_color
+        self.btn_4x4.background_color = selected_color if self.selected_grid_size == 4 else default_color
+
+    def update_source_button_colors(self):
+        default_color = (1, 1, 1, 1)
+        selected_color = (0.2, 0.6, 0.9, 1)
+
+        self.internal_btn.background_color = selected_color if self.selected_source == "internal" else default_color
+        self.preloaded_btn.background_color = selected_color if self.selected_source == "preloaded" else default_color
 
     def start_game(self, instance):
         print(f"Starting game with {self.selected_grid_size}x{self.selected_grid_size} grid, source: {self.selected_source}")

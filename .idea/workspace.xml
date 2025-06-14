@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="rename photos&#10;readd buttons&#10;grey out pushed buttons&#10;change grid layout">
-      <change afterPath="$PROJECT_DIR$/game_logic.py" afterDir="false" />
+    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="add game logic&#10;update bingogrid&#10;update main">
+      <change afterPath="$PROJECT_DIR$/bingoScreen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingoGrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/bingoGrid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,17 +26,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.BingoGrid.executor": "Run",
-    "Python.bingoGrid.executor": "Run",
-    "Python.image_loader.executor": "Run",
-    "Python.import_cards.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.BingoGrid.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bingoGrid.executor&quot;: &quot;Run&quot;,
+    &quot;Python.image_loader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.import_cards.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +85,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749220142200</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add game logic&#10;update bingogrid&#10;update main">
+      <option name="closed" value="true" />
+      <created>1749653350438</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749653350438</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add game logic&#10;update bingogrid&#10;update main">
+      <option name="closed" value="true" />
+      <created>1749653366590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749653366590</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +119,7 @@
     <MESSAGE value="Start project&#10;Add Kivy grid layout&#10;Add Buttons&#10;Add photos" />
     <MESSAGE value="Add Photos" />
     <MESSAGE value="rename photos&#10;readd buttons&#10;grey out pushed buttons&#10;change grid layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename photos&#10;readd buttons&#10;grey out pushed buttons&#10;change grid layout" />
+    <MESSAGE value="add game logic&#10;update bingogrid&#10;update main" />
+    <option name="LAST_COMMIT_MESSAGE" value="add game logic&#10;update bingogrid&#10;update main" />
   </component>
 </project>

@@ -1,9 +1,9 @@
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
 
-from image_loader import ImageLoader
-from bingoScreen import BingoGameScreen
-from mainMenu import MainMenuScreen
+from ImageLoader import ImageLoader
+from BingoScreen import BingoGameScreen
+from MainMenu import MainMenuScreen
 from soloMenu import SoloGameMenuScreen
 
 class BingoApp(App):

@@ -13,6 +13,9 @@ class BingoLogic:
         """Mark a cell as pressed."""
         self.pressed[row][col] = True
 
+    def can_press(self, called_label, cell_label):
+        return called_label == cell_label
+
     def check_win(self):
         """Check all rows, columns, and diagonals for a win."""
         return (
@@ -41,3 +44,4 @@ class BingoLogic:
         if all(self.pressed[i][self.size - 1 - i] for i in range(self.size)):
             return True
         return False
+

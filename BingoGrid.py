@@ -1,5 +1,5 @@
 from kivy.uix.gridlayout import GridLayout
-from imageButton import ImageButton
+from ImageButton import ImageButton
 import random
 
 class BingoGrid(GridLayout):
@@ -20,8 +20,10 @@ class BingoGrid(GridLayout):
                 if count >= self.grid_size * self.grid_size:
                     break
 
-                filename, path = image_items[count]
-                btn = ImageButton(image_path=path)
+                label, path = image_items[count]
+
+                # Pass label to the ImageButton
+                btn = ImageButton(image_path=path, label=label)
 
                 btn.row = row
                 btn.col = col
@@ -33,4 +35,4 @@ class BingoGrid(GridLayout):
 
     def handle_button_press(self, button):
         if self.on_cell_press:
-            self.on_cell_press(button.row, button.col)
+            self.on_cell_press(button.row, button.col, button.label)

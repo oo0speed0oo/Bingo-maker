@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="add game logic&#10;update bingogrid&#10;update main">
-      <change afterPath="$PROJECT_DIR$/bingoScreen.py" afterDir="false" />
+    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="Update pressed buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,7 @@
   &quot;keyToString&quot;: {
     &quot;Python.BingoGrid.executor&quot;: &quot;Run&quot;,
     &quot;Python.bingoGrid.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bingoScreen.executor&quot;: &quot;Run&quot;,
     &quot;Python.image_loader.executor&quot;: &quot;Run&quot;,
     &quot;Python.import_cards.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
@@ -101,7 +100,39 @@
       <option name="project" value="LOCAL" />
       <updated>1749653366590</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add voice&#10;add front button&#10;add back button&#10;add repeat button&#10;add image&#10;add new game screen">
+      <option name="closed" value="true" />
+      <created>1749911153333</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749911153333</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add voice&#10;add front button&#10;add back button&#10;add repeat button&#10;add image&#10;add new game screen">
+      <option name="closed" value="true" />
+      <created>1749911164736</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749911164736</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add main menu&#10;add select game">
+      <option name="closed" value="true" />
+      <created>1749912329797</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749912329797</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update pressed buttons">
+      <option name="closed" value="true" />
+      <created>1749912710797</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749912710797</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +151,9 @@
     <MESSAGE value="Add Photos" />
     <MESSAGE value="rename photos&#10;readd buttons&#10;grey out pushed buttons&#10;change grid layout" />
     <MESSAGE value="add game logic&#10;update bingogrid&#10;update main" />
-    <option name="LAST_COMMIT_MESSAGE" value="add game logic&#10;update bingogrid&#10;update main" />
+    <MESSAGE value="add voice&#10;add front button&#10;add back button&#10;add repeat button&#10;add image&#10;add new game screen" />
+    <MESSAGE value="add main menu&#10;add select game" />
+    <MESSAGE value="Update pressed buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update pressed buttons" />
   </component>
 </project>

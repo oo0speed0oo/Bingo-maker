@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="Update pressed buttons">
+    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="Updated sounds">
+      <change beforePath="$PROJECT_DIR$/.idea/Bing_Card_Marker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bing_Card_Marker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BingoGrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/BingoGrid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BingoScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/BingoScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/READ Me Bingo Maker.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/READ Me Bingo Maker.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordController.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soloMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/soloMenu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +28,6 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2y2vKHS0zINLdcT377EhqJXIu1y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,19 +35,24 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.BingoGrid.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MainMenu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.WordController.executor&quot;: &quot;Run&quot;,
     &quot;Python.bingoGrid.executor&quot;: &quot;Run&quot;,
     &quot;Python.bingoScreen.executor&quot;: &quot;Run&quot;,
     &quot;Python.image_loader.executor&quot;: &quot;Run&quot;,
     &quot;Python.import_cards.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mainMenu.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/michael/PycharmProjects/Bing_Card_Marker&quot;
   }
 }</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+        <option value="bundled-python-sdk-8753aad8314d-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.25557.178" />
       </set>
     </attachedChunks>
   </component>
@@ -132,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749912710797</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated sounds">
+      <option name="closed" value="true" />
+      <created>1750259254166</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750259254166</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated sounds">
+      <option name="closed" value="true" />
+      <created>1750259258816</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1750259258816</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +183,7 @@
     <MESSAGE value="add voice&#10;add front button&#10;add back button&#10;add repeat button&#10;add image&#10;add new game screen" />
     <MESSAGE value="add main menu&#10;add select game" />
     <MESSAGE value="Update pressed buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update pressed buttons" />
+    <MESSAGE value="Updated sounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated sounds" />
   </component>
 </project>

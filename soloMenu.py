@@ -85,7 +85,7 @@ class SoloGameMenuScreen(Screen):
         bingo_widget = game_screen_wrapper.children[0]
 
         # Call setup_game on the bingo widget with the user's selected options
-        bingo_widget.setup_game(grid_size=self.selected_grid_size, source=self.selected_source)
+        bingo_widget.ssetup_game(grid_size=self.selected_grid_size, source=self.selected_source)
 
         # Switch to the game screen
         self.manager.current = "game"

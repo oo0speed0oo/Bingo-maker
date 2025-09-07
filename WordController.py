@@ -5,16 +5,11 @@ from BingoGrid import BingoGrid
 
 class WordController:
     def __init__(self, all_images, label_display, image_display):
-        """
-        all_images: dict of {label: image_path}
-        label_display: Kivy Label widget
-        image_display: Kivy Image widget
-        """
+
         self.all_images = all_images
         self.label_display = label_display
         self.image_display = image_display
 
-        self.grid_size = 3
         self.image_list = []
         self.current_index = 0
         self.current_called_word = ''
@@ -77,6 +72,7 @@ class WordController:
         self.show_image(self.current_index)
 
     def speak(self, text):
+        print("in speak method")
         try:
             engine = pyttsx3.init()
             engine.say(text)
@@ -86,13 +82,15 @@ class WordController:
 
     def on_cell_press(self, row, col, label):
         """Handle cell tap from grid."""
-        if label != self.current_called_word:
-            self.speak(f"'{label}' is not the current word!")
-            print(f"⛔ '{label}' is not the current word!")
-            return
+        stripped_label = label.rsplit(".", 1)[0]
+
+        if stripped_label != self.current_called_word:
+            self.speak(f"'{stripped_label}' is not the current word!")
+            print(f"⛔ '{stripped_label}' is not the label!")
+            #return
         else:
-            print(f" in else")
             self.logic.mark_pressed(row, col)
+            self.speak(f"you have {stripped_label}")
 
         if self.logic.check_win():
             print("🎉 BINGO! You win!")  # Replace with a popup or Kivy event

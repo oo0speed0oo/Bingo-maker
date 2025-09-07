@@ -42,8 +42,6 @@ class BingoGameScreen(BoxLayout):
         self.back_button.bind(on_press=self.controller.previous_image)
         self.repeat_button.bind(on_press=self.controller.recall_image)
 
-        # Now setup game logic and UI
-        self.setup_game(grid_size)
 
     def setup_game(self, grid_size, source="internal"):
         self.grid_size = grid_size

@@ -1,7 +1,6 @@
 class BingoLogic:
     def __init__(self, size):
         self.size = size  # For 3x3 or 4x4 boards
-        #self.pressed = [[False for col in range(size)] for row in range(size)]
         self.pressed = []
         for row in range(size):
             new_row = []
@@ -10,7 +9,6 @@ class BingoLogic:
             self.pressed.append(new_row)
 
     def mark_pressed(self, row, col):
-        """Mark a cell as pressed."""
         self.pressed[row][col] = True
 
     def can_press(self, called_label, cell_label):

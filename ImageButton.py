@@ -18,6 +18,7 @@ class ImageButton(Button):
         self.bind(on_press=self.on_button_press)
 
     def on_button_press(self, instance):
+        print("in on_button press in IMAGEBUTTON")
         if not self.is_pressed:
             self.is_pressed = True
             self.opacity = 0.5  # Visually show it's pressed

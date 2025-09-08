@@ -34,6 +34,5 @@ class BingoGrid(GridLayout):
                 count += 1
 
     def handle_button_press(self, button):
-        print("In handle button_press in BINGOGRID")
         if self.on_cell_press:
-            self.on_cell_press(button.row, button.col, button.label)
+            self.on_cell_press(button, button.row, button.col, button.label)

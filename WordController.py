@@ -17,7 +17,7 @@ class WordController:
         self.logic = None
         self.grid = None
 
-    def setup_game(self, grid_size, source="internal"):
+    def setup_current_game(self, grid_size, source="internal"):
         self.grid_size = grid_size
 
         if source == "internal":
@@ -72,7 +72,6 @@ class WordController:
         self.show_image(self.current_index)
 
     def speak(self, text):
-        print("in speak method")
         try:
             engine = pyttsx3.init()
             engine.say(text)
@@ -80,17 +79,18 @@ class WordController:
         except Exception:
             print(f"(Speak fallback) {text}")
 
-    def on_cell_press(self, row, col, label):
-        """Handle cell tap from grid."""
+    def on_cell_press(self, button, row, col, label):
         stripped_label = label.rsplit(".", 1)[0]
 
         if stripped_label != self.current_called_word:
-            self.speak(f"'{stripped_label}' is not the current word!")
-            print(f"⛔ '{stripped_label}' is not the label!")
-            #return
+            self.speak(f" '{stripped_label}' is not the current word!")
+            print(f" '{stripped_label}' is not the label!")
         else:
+            print("Correct match!")
             self.logic.mark_pressed(row, col)
-            self.speak(f"you have {stripped_label}")
+            self.speak(f"You have {stripped_label}")
+            button.is_pressed = True
+            button.opacity = 0.5   # mark visually
 
         if self.logic.check_win():
-            print("🎉 BINGO! You win!")  # Replace with a popup or Kivy event
+            print("BINGO! You win!")  # Replace with popup or Kivy UI

@@ -47,7 +47,7 @@ class BingoGameScreen(BoxLayout):
         self.grid_size = grid_size
 
         # Let WordController set up game logic and create grid
-        self.controller.setup_game(grid_size, source)
+        self.controller.setup_current_game(grid_size, source)
 
         # Remove old grid if any
         if hasattr(self, 'grid') and self.grid:

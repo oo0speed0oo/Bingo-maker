@@ -11,11 +11,8 @@ class BingoLogic:
     def mark_pressed(self, row, col):
         self.pressed[row][col] = True
 
-    def can_press(self, called_label, cell_label):
-        return called_label == cell_label
 
     def check_win(self):
-        """Check all rows, columns, and diagonals for a win."""
         return (
             self.check_rows() or
             self.check_columns() or

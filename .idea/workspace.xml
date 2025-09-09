@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="Fix Beginning sound">
+    <list default="true" id="2ea4e4d8-a08c-4b1a-bccf-2fb8508390c6" name="Changes" comment="Fix game logic.&#10;Fix opacity on none matching items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BingoGrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/BingoGrid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BingoScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/BingoScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordController.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soloMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/soloMenu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757283025246</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fix game logic.&#10;Fix opacity on none matching items">
+      <option name="closed" value="true" />
+      <created>1757341957218</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1757341957218</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix game logic.&#10;Fix opacity on none matching items">
+      <option name="closed" value="true" />
+      <created>1757341979924</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1757341979924</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +237,7 @@
     <MESSAGE value="Update pressed buttons" />
     <MESSAGE value="Updated sounds" />
     <MESSAGE value="Fix Beginning sound" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Beginning sound" />
+    <MESSAGE value="Fix game logic.&#10;Fix opacity on none matching items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix game logic.&#10;Fix opacity on none matching items" />
   </component>
 </project>
